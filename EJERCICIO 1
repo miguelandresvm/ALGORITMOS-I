@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int suman_imp (int n){
+int i, s=0;
+for(i=1;i<=n;i++){
+if((i%2)!=0){
+s=s+i;
+}
+}
+return s;
+}
+int main (){
+int n=0,r=0, s=0;
+cout<<"Ejercicio 1 : Ingrese el numero N:";
+cin>>n;
+r=suman_imp (n);
+cout<<"La suma de los impares es :"<<r<<endl;
+return 0;
+}	
