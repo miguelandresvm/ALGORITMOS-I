@@ -1,0 +1,112 @@
+// miguelandres.h
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+int n, suma, i, con;
+char opcion;
+system ("color 90");
+do
+{
+cout<< " MENU\n\n ";
+cout<< "1)Cargar Vector .\n\n ";
+cout<< "2) Mostrar Vector.\n\n ";
+cout<< "3) Invertir vector (Do, While).\n\n ";
+cout<< "4) Clasificar vector.\n\n ";
+cout<< "4)  Buscar en forma binaria .\n\n ";
+cout<< "5) Busqueda Lineal .\n\n ";
+cout<< "0) Salir.\n\n ";
+cout<<"Ingrese la opcion deseada:\n\n ";
+cin>>opcion;
+ switch (opcion)
+ {
+	case '1':
+    {
+		int v [10000], i, n;
+		cout<< "Ingrese el tamano del vector:";
+		cin>>n;
+		for (i=0; i<n; i++)
+		{
+		cout<< "Ingrese un numero:"
+
+		cin>> v[i];
+		}
+		getch();
+	}
+
+	case '2':
+
+	{
+
+      for (i=0; i<n; i++)
+	  {
+		cout<< "Ingrese un numero:"
+
+		cin>> v[i];
+	  }
+	  getch();
+	}
+
+    case '3':
+	{
+     int n=10;
+
+     int a[10];
+
+     cout<<"Invertir Posición de Un vector \n\n";
+
+     for (int i=1; i<=10; i++) {
+
+     cout<<"Ingrese numero: ";
+
+     cin>> a[i];
+
+     }
+
+     cout<<"\n Vector Inicial \n------------- \n";
+
+     for (int i=1; i<=10; i++) {
+
+     cout<< a[i];
+
+     cout<<"\n";
+
+     }
+
+     cout<<"Vector Invertido \n------------- \n";
+
+     for (int j=1; j<=10; j++) {
+
+     cout<< a[n];
+
+     n=n-1;
+
+     cout<<"\n";
+
+   }
+
+   getch();
+
+}
+	case '4' :
+	{
+		for (i=0; i<n; i++)
+		{
+			for (j=0; j<n; j++)
+			{
+				if(v[i]>v[j])
+				{
+					aux=v[i];
+					v[i]>v[j];
+                    v[j]= aux;
+				}
+			}
+		}
+		getch();
+	}
+    
+ 
